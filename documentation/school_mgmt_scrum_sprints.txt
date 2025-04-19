@@ -1,0 +1,48 @@
+School Management System Development - SCRUM-Based Sprints
+
+📌 Sprint 1: Core Setup & Authentication (Week 1-2)
+--------------------------------------------------
+- Setup development environments (frontend, backend, database)
+- Create database and run schema (PostgreSQL)
+- Create login API (JWT-based auth for admin, student, teacher)
+- Build login UI (React)
+- Create Admin Dashboard UI
+- Setup role-based access (middleware/auth guards)
+
+📌 Sprint 2: Admin Functionalities (Week 3-4)
+--------------------------------------------
+- Admin user creation (add students, teachers)
+- Course creation page (admin) + course assignment
+- General timetable creation & update
+- Tracking sheet creation & update
+- Notification system (broadcast and role-specific messages)
+- Student list management (admin view)
+
+📌 Sprint 3: Student Module (Week 5-6)
+-------------------------------------
+- Student Dashboard UI
+- Course registration (with prerequisites & time conflict check)
+- Personalized timetable generation (post-registration)
+- Registered courses overview
+- Personalized tracking form view
+- Print registration form (admin)
+- Generate class attendance list (admin)
+- Registration period management (open/close window)
+
+📌 Sprint 4: Teacher Module & Assessment (Week 7-8)
+---------------------------------------------------
+- Teacher Dashboard UI
+- Link courses to teachers
+- View assigned courses
+- Generate mark sheets for registered students
+- Enter CA, assignment, project, exam marks
+- Broadcast message & share files (teacher)
+
+📌 Sprint 5: Reporting, Results & Finalization (Week 9-10)
+----------------------------------------------------------
+- Student results page (see CA, assignments, exams)
+- Group pages for each course
+- Student profile view (admin-editable only)
+- Unofficial transcript generation
+- Admin report generation (students, courses, performance)
+- Final tests, deployment setup, documentation

@@ -1,0 +1,130 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    width: 220px;
+    background-color: #e0f2fe; /* light blue */
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .sidebar h2 {
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+    color: #000;
+    text-align: center;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    background-color: #fff;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 8px;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .sidebar li:hover {
+    background-color: #ffd700; /* gold */
+    color: #000;
+  }
+  
+  /* Main Area */
+  .main-content {
+    flex: 1;
+    background-color: #f8fafc;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Header */
+  .header {
+    background-color: #2563eb;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  /* Content Body */
+  .dashboard-content {
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  /* Responsive for small devices */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      flex-direction: row;
+      overflow-x: auto;
+      justify-content: space-around;
+      width: 100%;
+    }
+  
+    .sidebar ul {
+      display: flex;
+      gap: 1rem;
+    }
+  
+    .sidebar li {
+      flex: 1;
+      padding: 10px;
+    }
+  
+    .main-content {
+      padding: 1rem;
+    }
+  }
+
+  .admin-actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .action-card {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+    cursor: pointer;
+    text-align: center;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .action-card:hover {
+    background-color: #e0f2fe;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  
